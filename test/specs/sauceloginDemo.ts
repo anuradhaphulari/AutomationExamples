@@ -1,5 +1,6 @@
 
 import sauceLoginPage from "../pageobjects/sauce.login.page.js";
+import * as Logindata from "../data/login.json" with {type:"json"}
 
 
 
