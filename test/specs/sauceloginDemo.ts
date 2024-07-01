@@ -17,6 +17,7 @@ browser.waitUntil (async()=>await $("h4").getText()==="Accepted usernames are:",
 //  await $("#user-name").setValue("standard_user");
 //  await  $("#password").setValue("secret_sauce");
 //  await (await $("//input[@type='submit']")).click();
+       await sauceLoginPage.performLogin(Logindata.valid.username,Logindata.valid.password);
 
 
 // browser.pause(5000);
