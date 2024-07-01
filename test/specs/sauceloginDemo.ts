@@ -12,8 +12,8 @@ describe('Verify the Login functionality', () => {
          
     });
     it('Verify the login shoud work with valid credentials', async() => {        
-browser.pause(5000);
-browser.waitUntil (async()=>await $("h4").getText()==="Accepted usernames are:",{ timeout: 10000, timeoutMsg: "failed for text  to match" })
+await browser.pause(5000);
+ await browser.waitUntil (async()=>await $("h4").getText()==="Accepted usernames are:",{ timeout: 10000, timeoutMsg: "failed for text  to match" })
  //await $("#user-name").setValue("standard_user");
 //  await  $("#password").setValue("secret_sauce");
 //  await (await $("//input[@type='submit']")).click();
