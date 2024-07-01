@@ -1,4 +1,4 @@
-import waitPage from "../pageobjects/wait.page"
+import waitPage from "../pageobjects/wait.page.js"
 describe("Verify the ait statergy",()=>{
 
     before("openapp",async()=>{
