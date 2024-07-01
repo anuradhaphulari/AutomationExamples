@@ -17,8 +17,12 @@ await browser.pause(5000);
  //await $("#user-name").setValue("standard_user");
 //  await  $("#password").setValue("secret_sauce");
 //  await (await $("//input[@type='submit']")).click();
-await sauceLoginPage.performLogin(Logindata.valid.username,Logindata.valid.password);
+////<<<<<<< HEAD
+//await sauceLoginPage.performLogin(Logindata.valid.username,Logindata.valid.password);
 
+//=======
+       await sauceLoginPage.performLogin(Logindata.valid.username,Logindata.valid.password);
+//>>>>>>> 711da3c8b4bb3592430eed877089971675a18615
 
 
 // browser.pause(5000);
