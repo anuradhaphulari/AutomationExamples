@@ -2,8 +2,6 @@
 import sauceLoginPage from "../pageobjects/sauce.login.page.js";
 import * as Logindata from "../data/login.json" with {type:"json"}
 
-
-
 describe('Verify the Login functionality', () => {
 
     before("open app", async() => {
@@ -13,24 +11,13 @@ describe('Verify the Login functionality', () => {
     });
     it('Verify the login shoud work with valid credentials', async() => {        
 await browser.pause(5000);
- await browser.waitUntil (async()=>await $("h4").getText()==="Accepted usernames are:",{ timeout: 10000, timeoutMsg: "failed for text  to match" })
- //await $("#user-name").setValue("standard_user");
-//  await  $("#password").setValue("secret_sauce");
-//  await (await $("//input[@type='submit']")).click();
-////<<<<<<< HEAD
-//await sauceLoginPage.performLogin(Logindata.valid.username,Logindata.valid.password);
-
-//=======
-       await sauceLoginPage.performLogin(Logindata.valid.username,Logindata.valid.password);
-//>>>>>>> 711da3c8b4bb3592430eed877089971675a18615
-
-
-// browser.pause(5000);
-browser.pause(5000);
-
-await sauceLoginPage.performLogin("standard_user","secret_sauce");
+ await browser.waitUntil (async()=>await $("h4").getText()==="Accepted usernames are:",{ timeout: 10000, timeoutMsg: "failed for text  to match" });
+ await sauceLoginPage.performLogin(Logindata.valid.username,Logindata.valid.password);
  
-browser.pause(5000);
+await browser.pause(5000);
+
+
+
 
 
         
